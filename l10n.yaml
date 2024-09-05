@@ -1,0 +1,6 @@
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+output-localization-file: cb_localizations.dart
+output-class: CbLocale
+synthetic-package: false
+output-dir: lib/l10n
