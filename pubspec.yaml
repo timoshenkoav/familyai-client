@@ -52,8 +52,14 @@ dependencies:
   flutter_html: ^3.0.0-beta.2
   flutter_markdown: ^0.7.3+1
   firebase_core: 3.4.0
+  flutter_webrtc: 0.11.7
+  firebase_crashlytics: 4.1.0
+  firebase_remote_config: 5.1.0
+  google_sign_in: ^6.2.1
+  url_launcher: ^6.3.0
 dependency_overrides:
   http: ^1.0.0
+  web: ^1.0.0
 
   # TODO: Recheck once flutter_inappwebview version >6.0.0 is released
   flutter_inappwebview_android:
@@ -73,6 +79,40 @@ flutter:
   generate: true
   assets:
     - assets/images/
+  fonts:
+    - family: Kumbh
+      fonts:
+        - asset: assets/fonts/kumbh/KumbhSans-Regular.ttf
+        - asset: assets/fonts/kumbh/KumbhSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/kumbh/KumbhSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/kumbh/KumbhSans-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/kumbh/KumbhSans-Black.ttf
+          weight: 700
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/inter/inter_regular.ttf
+        - asset: assets/fonts/inter/inter_regular.ttf
+          weight: 400
+        - asset: assets/fonts/inter/inter_medium.ttf
+          weight: 500
+        - asset: assets/fonts/inter/inter_bold.ttf
+          weight: 600
+        - asset: assets/fonts/inter/inter_black.ttf
+          weight: 700
+    - family: Oddval
+      fonts:
+        - asset: assets/fonts/oddval/oddval-regular.otf
+        - asset: assets/fonts/oddval/oddval-regular.otf
+          weight: 400
+        - asset: assets/fonts/oddval/oddval-medium.otf
+          weight: 500
+        - asset: assets/fonts/oddval/oddval-bold.otf
+          weight: 600
+        - asset: assets/fonts/oddval/oddval-black.otf
+          weight: 700
 flutter_gen:
   integrations:
     flutter_svg: true

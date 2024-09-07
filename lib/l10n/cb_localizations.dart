@@ -7,6 +7,8 @@ import 'package:intl/intl.dart' as intl;
 
 import 'cb_localizations_en.dart';
 
+// ignore_for_file: type=lint
+
 /// Callers can lookup localized strings with an instance of CbLocale
 /// returned by `CbLocale.of(context)`.
 ///
@@ -96,6 +98,132 @@ abstract class CbLocale {
   /// In en, this message translates to:
   /// **'Family AI'**
   String get app_name;
+
+  /// No description provided for @sign_in_with_google.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign In with Google'**
+  String get sign_in_with_google;
+
+  /// No description provided for @continue_with_email.
+  ///
+  /// In en, this message translates to:
+  /// **'Or continue with email'**
+  String get continue_with_email;
+
+  /// No description provided for @email_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Email address'**
+  String get email_hint;
+
+  /// No description provided for @password_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get password_hint;
+
+  /// No description provided for @confirm_password_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm password'**
+  String get confirm_password_hint;
+
+  /// No description provided for @label_continue.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get label_continue;
+
+  /// No description provided for @create_account.
+  ///
+  /// In en, this message translates to:
+  /// **'Create account'**
+  String get create_account;
+
+  /// No description provided for @dont_have_an_account.
+  ///
+  /// In en, this message translates to:
+  /// **'Don’t have an account?'**
+  String get dont_have_an_account;
+
+  /// No description provided for @already_have_account.
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account?'**
+  String get already_have_account;
+
+  /// No description provided for @unexpected_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Unexpected error'**
+  String get unexpected_error;
+
+  /// No description provided for @sign_up_with_google.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Up with Google'**
+  String get sign_up_with_google;
+
+  /// No description provided for @first_name_hint_required.
+  ///
+  /// In en, this message translates to:
+  /// **'First name*'**
+  String get first_name_hint_required;
+
+  /// No description provided for @last_name_hint_required.
+  ///
+  /// In en, this message translates to:
+  /// **'Secondary name*'**
+  String get last_name_hint_required;
+
+  /// No description provided for @email_hint_required.
+  ///
+  /// In en, this message translates to:
+  /// **'Email*'**
+  String get email_hint_required;
+
+  /// No description provided for @save_and_continue.
+  ///
+  /// In en, this message translates to:
+  /// **'Save and continue'**
+  String get save_and_continue;
+
+  /// No description provided for @add_member.
+  ///
+  /// In en, this message translates to:
+  /// **'Add member'**
+  String get add_member;
+
+  /// No description provided for @topic.
+  ///
+  /// In en, this message translates to:
+  /// **'Topic'**
+  String get topic;
+
+  /// No description provided for @role.
+  ///
+  /// In en, this message translates to:
+  /// **'Role'**
+  String get role;
+
+  /// No description provided for @invite.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite'**
+  String get invite;
+
+  /// No description provided for @members.
+  ///
+  /// In en, this message translates to:
+  /// **'Members'**
+  String get members;
+
+  /// No description provided for @copied.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied'**
+  String get copied;
 }
 
 class _CbLocaleDelegate extends LocalizationsDelegate<CbLocale> {

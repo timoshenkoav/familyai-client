@@ -2,6 +2,10 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
+import 'package:familyai/domain/repo/api_repository.dart';
+import 'package:familyai/domain/repo/avatar_repository.dart';
+import 'package:familyai/domain/repo/members_repository.dart';
+import 'package:familyai/domain/repo/user_repository.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
@@ -80,4 +84,8 @@ Future<void> setupLocator() async {
     ),
   );
   getIt.registerSingleton(dio);
+  getIt.registerSingleton(ApiRepository());
+  getIt.registerSingleton(UserRepository());
+  getIt.registerSingleton(AvatarRepository());
+  getIt.registerSingleton(MembersRepository());
 }

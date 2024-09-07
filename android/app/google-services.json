@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "351315350105",
+    "project_id": "familyai-9faa0",
+    "storage_bucket": "familyai-9faa0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351315350105:android:433a2e33fa856dbb8f9748",
+        "android_client_info": {
+          "package_name": "com.familyai.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsWGsYSe5ncoE2s7jtIs35mthOTuk_TxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

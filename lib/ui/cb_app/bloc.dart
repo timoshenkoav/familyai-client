@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:familyai/di/service_locator.dart';
+import 'package:qlevar_router/qlevar_router.dart';
 
 import 'event.dart';
 import 'state.dart';
@@ -15,7 +16,7 @@ class CbAppBloc extends Bloc<CbAppEvent, CbAppState> {
     emit(event.state);
   }
   void _init(InitEvent event, Emitter<CbAppState> emit) async {
-    await setupLocator();
-    add(UpdateEvent(state: CbAppStateAvatar()));
+
+    // add(UpdateEvent(state: CbAppStateAvatar()));
   }
 }

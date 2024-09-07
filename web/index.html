@@ -25,7 +25,25 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="familyai">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta name="google-signin-client_id" content="351315350105-b2jubi3boj6o49eo6jvp5tnmgiu3vq0u.apps.googleusercontent.com" />
+  <script src="https://accounts.google.com/gsi/client"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-analytics.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyDFBbdpw_OIMXhcoNMsWPAky3CIxdYNXEs",
+      authDomain: "familyai-9faa0.firebaseapp.com",
+      projectId: "familyai-9faa0",
+      storageBucket: "familyai-9faa0.appspot.com",
+      messagingSenderId: "351315350105",
+      appId: "1:351315350105:web:ffcd8626d96ec21a8f9748",
+      measurementId: "G-9QXFJTBYSD"
+    };
 
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 

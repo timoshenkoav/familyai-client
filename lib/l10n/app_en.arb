@@ -1,3 +1,24 @@
 {
-  "app_name": "Family AI"
+  "app_name": "Family AI",
+  "sign_in_with_google": "Sign In with Google",
+  "continue_with_email": "Or continue with email",
+  "email_hint": "Email address",
+  "password_hint": "Password",
+  "confirm_password_hint": "Confirm password",
+  "label_continue": "Continue",
+  "create_account": "Create account",
+  "dont_have_an_account": "Don’t have an account?",
+  "already_have_account": "Already have an account?",
+  "unexpected_error": "Unexpected error",
+  "sign_up_with_google": "Sign Up with Google",
+  "first_name_hint_required": "First name*",
+  "last_name_hint_required": "Secondary name*",
+  "email_hint_required": "Email*",
+  "save_and_continue": "Save and continue",
+  "add_member": "Add member",
+  "topic": "Topic",
+  "role": "Role",
+  "invite": "Invite",
+  "members": "Members",
+  "copied": "Copied"
 }
