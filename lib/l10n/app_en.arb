@@ -20,5 +20,6 @@
   "role": "Role",
   "invite": "Invite",
   "members": "Members",
-  "copied": "Copied"
+  "copied": "Copied",
+  "member_invited": "New member invited"
 }

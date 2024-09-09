@@ -127,14 +127,15 @@ class AvatarBloc extends Bloc<AvatarEvent, AvatarState> {
     };
 
     peerConnection.onAddStream = (stream) {
-      remoteRenderer.srcObject = stream;
+      // remoteRenderer.srcObject = stream;
       logDebug("onAddStream $remoteRenderer");
     };
     peerConnection.onTrack = (event) {
-      logDebug("onTrack $remoteRenderer ${event.track.kind}");
-      if (event.track.kind == "video" || event.track.kind == "audio") {
-        remoteRenderer.srcObject = event.streams[0];
-      }
+      logDebug("onTrack $remoteRenderer ${event.track.kind} ${event.streams.length}");
+      event.track.enabled = true;
+      // if (event.track.kind == "audio") {
+        remoteRenderer.srcObject = event.streams.first;
+      // }
     };
 
     peerConnection.onConnectionState = (state) {

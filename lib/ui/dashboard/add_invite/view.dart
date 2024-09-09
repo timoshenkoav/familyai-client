@@ -5,6 +5,7 @@ import 'package:familyai/ui/kit/input_box.dart';
 import 'package:familyai/ui/kit/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:qlevar_router/qlevar_router.dart';
 
 import 'bloc.dart';
 import 'event.dart';
@@ -205,7 +206,10 @@ class AddInvitePage extends StatelessWidget {
                   enabled: value,
                   onClick: () async {
                     if (await bloc.invite()) {
-
+                      QR.replaceAll("/dashboard");
+                      if (context.mounted) {
+                        context.showSnackError(message: locale.member_invited);
+                      }
                     } else {
                       if (context.mounted) {
                         context.showSnackError();

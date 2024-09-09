@@ -224,6 +224,12 @@ abstract class CbLocale {
   /// In en, this message translates to:
   /// **'Copied'**
   String get copied;
+
+  /// No description provided for @member_invited.
+  ///
+  /// In en, this message translates to:
+  /// **'New member invited'**
+  String get member_invited;
 }
 
 class _CbLocaleDelegate extends LocalizationsDelegate<CbLocale> {

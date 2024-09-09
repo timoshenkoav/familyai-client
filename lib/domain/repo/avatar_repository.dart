@@ -20,8 +20,12 @@ class AvatarRepository {
       final list = jsonDecode(listResp.data)["data"]["sessions"];
       for (dynamic elem in list) {
         final id = elem["session_id"];
-        final resp = await dio.post("$SERVER_URL/v1/streaming.stop",
-            data: {"session_id": id}, options: options);
+        try {
+          final resp = await dio.post("$SERVER_URL/v1/streaming.stop",
+              data: {"session_id": id}, options: options);
+        }catch(ex){
+
+        }
       }
     } catch (ex, stack) {
       logDebug(ex);
@@ -48,14 +52,21 @@ class AvatarRepository {
         options: options
     );
   }
-
+  Future<void> voices() async {
+    await closeSessions();
+    final resp = await dio.get("$SERVER_URL/v2/voices", options: options);
+  }
   Future<dynamic> createSession() async {
+
     await closeSessions();
     final resp = await dio.post("$SERVER_URL/v1/streaming.new",
         data: {
-          "quality": "low",
+          "quality": "medium",
           "avatar": "Anna_public_3_20240108",
-          "voice": {"voice_id": "131a436c47064f708210df6628ef8f32"},
+          "voice": {
+            "voice_id": "131a436c47064f708210df6628ef8f32",
+            "emotion":"Friendly"
+          },
         },
         options: options);
     return jsonDecode(resp.data)["data"];

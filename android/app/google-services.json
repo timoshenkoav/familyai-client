@@ -12,7 +12,20 @@
           "package_name": "com.familyai.mobile"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "351315350105-p82aq5l4onelon4odces123h88ki40ps.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.familyai.mobile",
+            "certificate_hash": "953bfd85134fe5160ed2f12c6c7683377f8da653"
+          }
+        },
+        {
+          "client_id": "351315350105-b2jubi3boj6o49eo6jvp5tnmgiu3vq0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDsWGsYSe5ncoE2s7jtIs35mthOTuk_TxA"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351315350105-b2jubi3boj6o49eo6jvp5tnmgiu3vq0u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "351315350105-bnte2illacq39m9mpkh3s709uilbrfst.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.familyai.mobile.familyai"
+              }
+            }
+          ]
         }
       }
     }

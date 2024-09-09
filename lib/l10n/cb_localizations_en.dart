@@ -71,4 +71,7 @@ class CbLocaleEn extends CbLocale {
 
   @override
   String get copied => 'Copied';
+
+  @override
+  String get member_invited => 'New member invited';
 }
